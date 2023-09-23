@@ -63,7 +63,7 @@ git commit -m "Primer commit"
 
 Para mostrar las ramas:
 ```bash
-git branch
+git branch myapp2-dev
 ```
 
 Para crear:
@@ -84,3 +84,4 @@ git checkout master
 git merge dev
 git push
 ```
+
