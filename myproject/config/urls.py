@@ -27,7 +27,7 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    path("",include("myapp.urls")),
+    
     path("cliente/",include("cliente.urls")),
     
     
