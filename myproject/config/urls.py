@@ -24,13 +24,11 @@ urlpatterns = [
     path('saludo/', views.saludo),
     
     
-    
-    
-    
 ]
 
 urlpatterns += [
-    path("",include("myapp.urls"))
+    path("",include("myapp.urls")),
+    path("cliente/",include("cliente.urls")),
     
     
     

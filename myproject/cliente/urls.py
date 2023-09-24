@@ -3,13 +3,16 @@ from django.urls import path
 
 from . import views
 
-app_name = "myapp"
+app_name = "cliente"
 
 urlpatterns = [
-        path('', views.index, name = "index"),
+        path('', views.index, name = "cliente"),
     
     
     
     
     
 ]
+
+
+
