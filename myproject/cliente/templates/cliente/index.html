@@ -8,9 +8,15 @@
 <body>
 
 
-<h1> {{nombre}} </h1>
+<h1> Coderhouse </h1>
 
-<p>soy tu primer cliente </p>
+    <ul>
+        {% for costumer in clientes %}
+            <li>{{cliente.nombre}}</li>
+            <li>{{cliente.apellido}}</li> 
+        {% endfor %}   
+    </ul>
+    <p>{{}}</p>
 
 
 

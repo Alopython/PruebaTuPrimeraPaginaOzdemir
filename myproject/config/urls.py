@@ -28,6 +28,7 @@ urlpatterns = [
 
 urlpatterns += [
     
+    path("",include("home.urls")),
     path("cliente/",include("cliente.urls")),
     
     
