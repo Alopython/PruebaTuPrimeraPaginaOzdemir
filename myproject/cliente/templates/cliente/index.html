@@ -1,27 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'home/base.html' %}
+
+{% block <title></title> %}
+    <h2>Clienteses</h2>
+{% endblock <title></title> %}
 
 
-<h1> Coderhouse </h1>
-
+{% block content %}
     <ul>
-        {% for costumer in clientes %}
-            <li>{{cliente.nombre}}</li>
-            <li>{{cliente.apellido}}</li> 
-        {% endfor %}   
+    {% for cliente in clientes %}
+            <li>{{cliente.nombre}} {{cliente.apellido}}</li>
+    {% endfor %}
     </ul>
-    <p>{{}}</p>
+        <a href="{% url "home:index" %}">Ir al menu</a>
+{% endblock content %}
+
+ 
 
 
 
 
 
     
-</body>
-</html>

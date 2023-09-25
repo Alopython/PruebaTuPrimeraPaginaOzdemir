@@ -1,17 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
-</head>
-<body>
+  {% extends "home/base.html" %} 
 
-    <h1> Aplication Engineering</h1>
+  {% block title %}
+    <h2>Home</h2>
+  {% endblock title %}
 
-    <p><a href="">Clientes</a></p>
-    <p><a href="{% url 'home:about' %}">about</a></p>
+
+
+  {% block content %}  
+  
+  
     
+
+    <p><a href="{% url 'home:about' %}">About</a></p>
+    <p><a href="{% url 'cliente:index' %}">cliente</a></p>
+
+    
+    
+  {% endblock content %}
+ 
+ 
+
+
+    
+   
+ 
+    
+    
+    
+
 
 
 
