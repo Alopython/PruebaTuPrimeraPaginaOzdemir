@@ -1,21 +1,14 @@
   {% extends "home/base.html" %} 
 
-  {% block title %}
+{% block <title></title> %}
     <h2>Home</h2>
-  {% endblock title %}
+{% endblock <title></title> %}
 
 
 
-  {% block content %}  
-  
-  
-    
-
+  {% block content %}    
     <p><a href="{% url 'home:about' %}">About</a></p>
-    <p><a href="{% url 'cliente:index' %}">cliente</a></p>
-
-    
-    
+    <p><a href="{% url 'cliente:index' %}">Clientes</a></p>    
   {% endblock content %}
  
  
