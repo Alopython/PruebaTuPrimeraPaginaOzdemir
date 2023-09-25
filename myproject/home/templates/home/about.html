@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>hola esto es about</h2>
-    <button><a href="{% url "home:index" %}">Ir atras</a></button>
-</body>
-</html>
+{% extends 'home/base.html' %}
+
+
+{% block <title></title> %}
+<p>acerca de nosotros</p>
+{% endblock <title></title> %}
+
+
+
+{% block content %}
+ <p>hola esto es about</p>
+
+<p></p><a href="{% url "home:index" %}">Ir al menu</a><p></p>
+{% endblock content %}
